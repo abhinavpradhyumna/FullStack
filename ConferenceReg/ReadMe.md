@@ -11,26 +11,48 @@ Ensure you have the following installed on your system:
 - [Node.js](https://nodejs.org/) (Recommended: LTS version)
 - [Git](https://git-scm.com/)
 
-### Installation
+### Creating a New React App and Replacing `src`
 
-1. **Clone the Repository:**
+1. **Create a New React App:**
    ```sh
-   git clone https://github.com/your-username/your-repo.git
+   npx create-react-app my-app
    ```
-   Replace `your-username` and `your-repo` with the actual GitHub username and repository name.
+   Or using `yarn`:
+   ```sh
+   yarn create react-app my-app
+   ```
+   This will generate a new React project in the `my-app` directory.
 
 2. **Navigate to the Project Directory:**
    ```sh
-   cd your-repo
+   cd my-app
    ```
 
-3. **Copy the `src` Folder to Your React Project:**
-   If you have an existing React project, copy the `src` folder from this repository into your project directory:
+3. **Remove the Default `src` Folder:**
    ```sh
-   cp -r src /path/to/your/react/project/
+   rm -rf src
+   ```
+   This will delete the default `src` folder created by Create React App.
+
+4. **Clone This Repository:**
+   ```sh
+   git clone https://github.com/your-username/abhinavpradhyumna.git FullStack
+   ```
+   Replace `your-username` and `your-repo` with your actual GitHub username and repository name.
+
+5. **Copy the `src` Folder from the Cloned Repository:**
+   ```sh
+   cp -r temp-repo/src ./
    ```
 
-4. **Install Dependencies:**
+6. **Remove the Temporary Cloned Repository:**
+   ```sh
+   rm -rf temp-repo
+   ```
+
+### Installation
+
+7. **Install Dependencies:**
    If you're using `npm`:
    ```sh
    npm install
@@ -40,7 +62,7 @@ Ensure you have the following installed on your system:
    yarn install
    ```
 
-5. **Start the Development Server:**
+8. **Start the Development Server:**
    If you're using `npm`:
    ```sh
    npm start
@@ -50,7 +72,7 @@ Ensure you have the following installed on your system:
    yarn start
    ```
 
-6. **Open the App in the Browser:**
+9. **Open the App in the Browser:**
    The app should now be running at:
    ```
    http://localhost:3000
@@ -75,3 +97,4 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 Happy Coding! 🚀
+
