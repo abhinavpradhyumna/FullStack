@@ -36,7 +36,7 @@ Ensure you have the following installed on your system:
 
 4. **Clone This Repository:**
    ```sh
-   git clone https://github.com/your-username/abhinavpradhyumna.git FullStack
+   git clone https://github.com/your-username/abhinavpradhyumna.git
    ```
    Replace `your-username` and `your-repo` with your actual GitHub username and repository name.
 
